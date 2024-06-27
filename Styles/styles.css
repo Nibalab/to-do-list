@@ -42,4 +42,19 @@ body {
     align-items: center;
     height: 100px; /* Adjust height as needed */
 }
+.nav {
+    text-align: center;
+    color: white;
+}
+
+/* .name {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.your-plan {
+    color: red;
+    font-size: 14px;
+    /* margin-top: 2px; */
+} */
 
