@@ -20,6 +20,32 @@
         <input type="datetime-local" id="taskDateTime">
         <button onclick="addTask()" class="addTask">Add Task</button>
     </div>    
+    <div class="container">
+        <!-- My Tasks Section -->
+        <div class="section-container">
+            <div id="myTask" class="section">
+                <h1>My Tasks</h1>
+                <ul id="taskList"></ul>
+            </div>
+        </div>
+
+        <!-- Done Section -->
+        <div class="section-container">
+            <div id="CompletedTask" class="section">
+                <h1>Done</h1>
+                <ul id="completedTaskList"></ul>
+            </div>
+        </div>
+
+        <!-- Past Due Section -->
+        <div class="section-container">
+            <div id="pastDue" class="section">
+                <h1>Past Due</h1>
+                <ul id="pastDueTaskList"></ul>
+            </div>
+        </div>
+    </div>
+
     
     
     <script src="Scripts/index.js"></script>
