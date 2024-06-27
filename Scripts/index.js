@@ -31,9 +31,9 @@ function addTask() {
     taskDateTime.value = '';
 }
 function markAsCompleted(svg) {
-    const li = svg.parentElement.parentElement; // Navigate up to the <li> element
+    const li = svg.parentElement.parentElement; 
     li.className = 'completed';
-    svg.parentElement.remove(); // Remove the check icon container
+    svg.parentElement.remove(); 
 
     const completedTaskList = document.getElementById('completedTaskList');
     completedTaskList.appendChild(li);
@@ -48,7 +48,7 @@ function updateTaskStatus() {
             task.className = 'past-due';
             const checkIconContainer = task.querySelector('.check-icon-container');
             if (checkIconContainer) {
-                checkIconContainer.remove(); // Remove the check icon container if task is past due
+                checkIconContainer.remove(); 
             }
 
             const pastDueTaskList = document.getElementById('pastDueTaskList');
