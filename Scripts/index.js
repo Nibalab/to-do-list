@@ -38,4 +38,23 @@ function markAsCompleted(svg) {
     const completedTaskList = document.getElementById('completedTaskList');
     completedTaskList.appendChild(li);
 }
+function updateTaskStatus() {
+    const now = new Date().toISOString();
+    const tasks = document.querySelectorAll('#taskList li.pending');
+
+    tasks.forEach(task => {
+        const taskTime = task.dataset.time;
+        if (now > taskTime) {
+            task.className = 'past-due';
+            const checkIconContainer = task.querySelector('.check-icon-container');
+            if (checkIconContainer) {
+                checkIconContainer.remove(); // Remove the check icon container if task is past due
+            }
+
+            const pastDueTaskList = document.getElementById('pastDueTaskList');
+            pastDueTaskList.appendChild(task);
+        }
+    });
+}
+
 
