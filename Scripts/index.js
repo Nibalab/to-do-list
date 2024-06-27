@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    setInterval(updateTaskStatus); // Update task statuses every second
+    setInterval(updateTaskStatus); 
 });
 
 function addTask() {
