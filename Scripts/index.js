@@ -30,3 +30,12 @@ function addTask() {
     taskInput.value = '';
     taskDateTime.value = '';
 }
+function markAsCompleted(svg) {
+    const li = svg.parentElement.parentElement; // Navigate up to the <li> element
+    li.className = 'completed';
+    svg.parentElement.remove(); // Remove the check icon container
+
+    const completedTaskList = document.getElementById('completedTaskList');
+    completedTaskList.appendChild(li);
+}
+
