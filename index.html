@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="nav">
+            <h1 class="name">Tasker</h1>
+            <h3 class="your-plan">Plan your day with us!</h3>
+        </div>
+    </div>
+    
+    <div id="taskInputSection" class="taskInputSection">  
+        <input type="text" id="taskInput" placeholder="New task...">
+        <input type="datetime-local" id="taskDateTime">
+        <button onclick="addTask()" class="addTask">Add Task</button>
+    </div>    
+    
+    
+    <script src="Scripts/index.js"></script>
+</body>
+</html>
