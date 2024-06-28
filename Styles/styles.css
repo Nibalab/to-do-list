@@ -23,6 +23,7 @@ body {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    
 }
 
 .addTask:hover {
@@ -36,7 +37,6 @@ body {
 
 .navbar {
     background-color: #add8e6; 
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,20 +76,20 @@ ul {
 
 li {
     padding: 10px;
-    border: 1px solid #ffffff;
+    border: 1px solid #add8e6;
     margin: 5px 0;
 }
 
 .pending {
-    background-color: #ffffff;
+    background-color: #add8e6;
 }
 
 .completed {
-    background-color: #ffffff;
+    background-color: #add8e6;
 }
 
 .past-due {
-    background-color: #ffffff;
+    background-color: #add8e6;
 }
 
 .check-icon-container {
@@ -99,8 +99,8 @@ li {
 }
 
 .check-icon {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     fill: white;
     cursor: pointer;
     background-color: blue;
